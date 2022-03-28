@@ -7,13 +7,17 @@ import { LoginComponent } from './login/login.component';
 import { FormRegisterComponent } from './form-register/form-register.component';
 import { TimelinesComponent } from './timelines/timelines.component';
 import {AppRoutingModule} from "./app-routing.module";
+import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
+import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     FormRegisterComponent,
-    TimelinesComponent
+    TimelinesComponent,
+    YoutubePlaylistComponent,
+    YoutubePlayerComponent
   ],
   imports: [
     BrowserModule,
