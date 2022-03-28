@@ -1,7 +1,7 @@
- import { TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-// @ts-ignore
- import { AppComponent } from './form-register';
+import { FormRegisterComponent } from './form-register.component';
+import {AppComponent} from "../app.component";
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -23,9 +23,8 @@ describe('AppComponent', () => {
 
   it(`should have as title 'angular-form'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    // @ts-ignore
-    expect(app.title).toEqual('angular-form');
+    const register = fixture.componentInstance;
+    expect(register.title).toEqual('form-required');
   });
 
   it('should render title', () => {
